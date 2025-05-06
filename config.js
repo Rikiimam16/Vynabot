@@ -1,0 +1,86 @@
+/*
+SCRIPT BY © VYNAA VALERIE 
+•• recode kasih credits 
+•• contacts: (6282389924037)
+•• instagram: @vynaa_valerie 
+•• (github.com/VynaaValerie) 
+*/
+import { watchFile, unwatchFile } from 'fs';
+import chalk from 'chalk';
+import { fileURLToPath } from 'url';
+global.setting = {
+  autoclear: false,
+  addReply: true,
+};
+
+global.owner = [
+  ['6289512831977', 'RIKI リキ', true],
+];
+
+global.info = {
+  nomerbot: '6287853913756',
+  pairingNumber: '6287853913756',
+  nameown: 'RIKI リキ',
+  nomerown: '6289512831977',
+  token: 'VynaaAI4m2n1o', // Token harus diisi agar bot dapat berjalan
+  packname: 'sticker by',
+  author: 'RIKI リキ',
+  namebot: 'Rikz BOTZ',
+  wm: 'made by Rikz BOTZ',
+  stickpack: 'Rikz BOTZ',
+  stickauth: 'Rikz BOTZ',
+};
+
+global.wait = '_M O H O N - T U N G G U_';
+global.maxwarn = 5;
+
+// URLs
+global.url = {
+  profil: 'https://i.ibb.co.com/H7pLC5M/1000008123.jpg',
+  did: 'https://telegra.ph/file/fdc1a8b08fe63520f4339.jpg',
+  rules: 'https://telegra.ph/file/afcfa712bd09f4fcf027a.jpg',
+  thumbnail: 'https://i.ibb.co.com/H7pLC5M/1000008123.jpg',
+  thumb: 'https://i.ibb.co.com/H7pLC5M/1000008123.jpg',
+  logo: 'https://telegra.ph/file/07428fea2fd4dccaab65f.jpg',
+  unReg: 'https://telegra.ph/file/ef02d1fdd59082d05f08d.jpg',
+  registrasi: 'https://itzpire.com/file/6ead5b50254b.jpg',
+  confess: 'https://telegra.ph/file/03cabea082a122abfa5be.jpg',
+  akses: 'https://telegra.ph/file/6c7b9ffbdfb0096e1db3e.jpg',
+  wel: 'https://telegra.ph/file/9dbc9c39084df8691ebdd.mp4', // Welcome GIF
+  bye: 'https://telegra.ph/file/1c05b8c019fa525567d01.mp4', // Goodbye GIF
+  sound: 'https://media.vocaroo.com/mp3/1awgSZYHXP3B', // Audio menu
+  sig: '',
+  sgh: '',
+  sgc: '',
+};
+
+// Payment Information
+global.payment = {
+  psaweria: '',
+  ptrakterr: '-',
+  pdana: '',
+};
+
+// API Configuration | Isi pake apikey mu
+global.api = {
+  btch: '_',
+};
+global.APIs = {
+  btch: 'https://api.botcahx.eu.org',
+};
+global.APIKeys = {
+  'https://api.botcahx.eu.org': '_',
+};
+let file = fileURLToPath(import.meta.url);
+watchFile(file, () => {
+  unwatchFile(file);
+  console.log(chalk.redBright("Update 'config.js'"));
+  import(`${file}?update=${Date.now()}`);
+});
+/*
+SCRIPT BY © VYNAA VALERIE 
+•• recode kasih credits 
+•• contacts: (6282389924037)
+•• instagram: @vynaa_valerie 
+•• (github.com/VynaaValerie) 
+*/
